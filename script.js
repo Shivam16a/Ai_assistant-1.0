@@ -68,6 +68,18 @@ function takeCommand(message) {
         speak("Opening Facebook...")
         window.open("https://www.facebook.com/", "_blank")
     } 
+    else if (message.includes("open calculator")) {
+        speak("Opening calculatop...")
+        window.open("calculator://")
+    }
+    else if (message.includes("time")) {
+        let time = new Date().toDateString(undefined,{hours:"numeric",minute:"numeric"})
+        speak(time)
+    }
+    else if (message.includes("time")) {
+        let date = new Date().toDateString(undefined,{day:"numeric",month:"short"})
+        speak(date)
+    }
     else {
         let query = message.replace("shivam", "")
         speak(`I found something on the internet regarding ${query}`)
