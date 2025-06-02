@@ -70,7 +70,7 @@ function takeCommand(message) {
     } 
     else if (message.includes("open calculator")) {
         speak("Opening calculatop...")
-        window.open("calculator://")
+        window.open("calculator:\\")
     }
     else if (message.includes("time")) {
         let time = new Date().toDateString(undefined,{hours:"numeric",minute:"numeric"})
