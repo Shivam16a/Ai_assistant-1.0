@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#irman {
+    width: 600px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body #pa {
+    color: rgb(222, 45, 190);
+}
+
+body #as {
+    color: rgb(35, 66, 226);
+}
+
+#btn-spk {
+    width: 400px;
+    height: 50px;
+    margin: 5px auto;
+    position: relative;
+    gap: 10px;
+    font-size: 25px;
+    background: linear-gradient(rgb(30, 165, 214), rgb(228, 52, 210));
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(37, 168, 216), 0 0 20px rgb(237, 60, 211);
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+#assis{
+    width: 250px;
+    margin: 0 auto;
+    display: none;
+}
+#btn-spk:hover {
+    letter-spacing: 2px;
+    width: 450px;
+}
+
+@media (max-width: 500px) {
+    #irman {
+        width: 90%;
+    }
+
+    body h1 {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    #btn-spk {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #btn-spk:hover {
+        letter-spacing: 3px;
+        width: 95%;
+    }
+}
+@media (min-width:501px) and (max-width:950px){
+    #irman{
+        width: 50%;
+        top: 5px;
+    }
+    h1{
+        margin-top: 10px;
+    }
+}
