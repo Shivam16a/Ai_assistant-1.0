@@ -76,7 +76,7 @@ function takeCommand(message) {
         let time = new Date().toDateString(undefined,{hours:"numeric",minute:"numeric"})
         speak(time)
     }
-    else if (message.includes("time")) {
+    else if (message.includes("date")) {
         let date = new Date().toDateString(undefined,{day:"numeric",month:"short"})
         speak(date)
     }
