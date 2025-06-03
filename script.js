@@ -49,10 +49,10 @@ function takeCommand(message) {
     if (message.includes("hello") || message.includes("hi")) {
         speak("hello sir, how can I help you today")
     }
-    else if (message.includes("who are you")) {
+    else if (message.includes("who are you") || message.includes("who you are") || message.includes("who r u")) {
         speak("I am Pihu a virtual assistant, created by Shivam sir")
     } 
-    else if (message.includes("open youtube")) {
+    else if (message.includes("open youtube") || message.includes("open utube")) {
         speak("Opening YouTube...")
         window.open("https://www.youtube.com/", "_blank")
     } 
@@ -75,10 +75,6 @@ function takeCommand(message) {
     else if (message.includes("time")) {
         let time = new Date().toDateString(undefined,{hours:"numeric",minute:"numeric"})
         speak(time)
-    }
-    else if (message.includes("date")) {
-        let date = new Date().toDateString(undefined,{day:"numeric",month:"short"})
-        speak(date)
     }
     else {
         let query = message.replace("shivam", "")
